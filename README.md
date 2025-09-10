@@ -10,6 +10,7 @@ Contains the analysis for the project.
 
 # Data Overview
 The dataset used for this project is the Divorce Prediction dataset from Kaggle. This dataset contains simulated data of 5000 couples with 21 predictors of divorce, as well as a target variable of whether the couples got a divorce or not. 
+Source: https://www.kaggle.com/datasets/vanpatangan/divorce-prediction
 
 
 
