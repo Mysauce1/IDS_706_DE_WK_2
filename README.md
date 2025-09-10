@@ -9,11 +9,8 @@ Contains the analysis for the project.
 
 
 # Data Overview
-The dataset used for this project is the Divorce Prediction dataset from Kaggle. This dataset contains simulated data of 5000 couples with 21 predictors of divorce, as well as a target variable of whether the couples got a divorce or not. The variables included are as follows:
-- age_at_marriage: 
-- marriage_duration: The number of years the couple had (or have) been married.
-- num_children: The number of children the couple have.
-- education_level: The highest education level an (unspecified) individual in the couple obtained
+The dataset used for this project is the Divorce Prediction dataset from Kaggle. This dataset contains simulated data of 5000 couples with 21 predictors of divorce, as well as a target variable of whether the couples got a divorce or not. 
+
 
 
 # Analysis Overview
@@ -25,7 +22,7 @@ The following steps were conducted to perform the analysis:
 - Explore summary statistics of age at marriage based on the marital status
 - Check if there are enough love couples to conduct the analysis
 - Filter the dataset based on love couples
-- Explore the frequency of love couples in each marital status 
+- Explore the frequency of love couples in each marital status. You may need to use Jupyter Notebook to see the visualization. 
 - Encode the categorical variables
 - Perform logistic regression
 - Interpret the regression coefficients
@@ -33,7 +30,7 @@ The following steps were conducted to perform the analysis:
 # Results
 
 ## Exploratory Analysis
-- Based on the summary of the data types, there appears to be 13 integers, 4 floats (decimal numbers), and 5 objects. It is important to note that among the integer variables are a few encoded categorical variables, such as cultural background (whether the individuals in the couple come from the same cultural background), and divorced (whether the individuals are divorced)
+- Based on the summary of the data types, there appears to be 13 integers, 4 floats (decimal numbers), and 5 objects.
 
 -Based of the summary statistics regarding age at marriage for married and divorced couples, 27 seems to be the average age that people among both marital status get married. This seems like a reasonable age considering most people finish school and are a few years into their careers by the time they are 27. With more stability in their lives, many people feel more comfortable getting married. Both status have a standard deviation of almost 5 years, and the minimal age is 18. The main difference between the marital status is the max age. The oldest age at marriage for a divorced couple is 45, while the oldest for a couple that is still married is 43.
 
