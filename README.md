@@ -23,7 +23,7 @@ The following steps were conducted to perform the analysis:
 - Explore summary statistics of age at marriage based on the marital status
 - Check if there are enough love couples to conduct the analysis
 - Filter the dataset based on love couples
-- Explore the frequency of love couples in each marital status. You may need to use Jupyter Notebook to see the visualization. 
+- Explore the frequency of love couples in each marital status.  
 - Encode the categorical variables
 - Perform logistic regression
 - Interpret the regression coefficients
@@ -41,6 +41,8 @@ The following steps were conducted to perform the analysis:
 
 ## Love Marriages (Before Logistic Regression)
 - Based on the the results from the count of marriage types, love marriages make up the majority of the data with 3513 couples out of 5000. This is good, because we can filter the dataset without fear of losing too much data.
+
+<img width="1335" height="773" alt="Screenshot 2025-09-10 232833" src="https://github.com/user-attachments/assets/db812d43-5ffa-49f7-b1d0-84ff6c3cd7cf" />
 
 - Based on the results from the bar graph with the marital status frequencies for couples who married at age 30 or after, there appears to be more couples who have gotten a divorce (around 700 for divorce vs around 500 for married).
 
