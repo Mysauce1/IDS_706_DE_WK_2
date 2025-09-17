@@ -3,10 +3,72 @@
 # Project Overview
 This project explores factors that impact the odds of a married couple getting a divorce. We will focus on love marriages, as opposed to arranged marriages and marriages that occurred for other reasons.
 
-# Included Files
+# Required Files
 ## divorce.py
 Contains the analysis for the project.
 
+## test_divorce.py
+Contains test cases to ensure the functions defined for the analysis work properly. There are 3 test cases:
+1. test_totalrow: Checks if the expected number of rows are present in the dataset.
+2. test_missing_values: Checks if a specific column is free of missing values.
+3. test_summ_stat_dtype: Checks if the mean age at marriage for both marital status are float data types.
+
+## requirements.txt
+Contains dependancies that will be used to make and run the test cases.
+
+## Makefile
+Runs and formats the test cases.
+
+# Setup Instructions
+
+## Check for the required files
+These are the files included in the "Required Files" section, and can be found within the repository.
+
+## Ensure dev container is set up
+You should see a folder for the dev container in the repository.
+
+If the dev container is not present and you are working in Visual Studio Code, complete the following steps:
+
+1. Click ctrl/command+shift+P
+2. Search and select Dev Containers: Add Development Container Configuration Files...
+3. Select Create a new configuration...
+4. Select Python 3
+5. Select 3.11
+- I normally choose bookworm, but bullseye probably works just as well
+6. Select any other dependencies (optional)
+- The container will be built after this step
+7. Click ctrl/command+shift+P
+8. Search and select Dev Containers: Rebuild Container
+- This will rebuild the container
+
+## Potential Step: Install packages for analysis (skip if not needed)
+After rebuilding the dev container, you might need to install some packages for the analysis. To do so, enter the following into the terminal:
+```
+pip install numpy
+pip install pandas
+pip install scikit-learn
+pip install matplotlib
+```
+
+## Install dependencies from the requirements.txt file
+In the terminal, run:
+```
+make install
+```
+
+## Run the tests
+In the terminal, run:
+```
+make test
+```
+This will show you the results of the tests.
+
+## Clean up the environment
+In the terminal, run:
+```
+make clean
+```
+Note: I took out the linting step because I could not figure out how to shorten the lines.
 
 # Data Overview
 The dataset used for this project is the Divorce Prediction dataset from Kaggle. This dataset contains simulated data of 5000 couples with 21 predictors of divorce, as well as a target variable of whether the couples got a divorce or not. 
