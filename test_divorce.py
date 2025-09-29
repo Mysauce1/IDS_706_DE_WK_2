@@ -38,16 +38,14 @@ class TestDivorceFunctions(unittest.TestCase):
     def test_summ_stat_dtype(self):
         summ_stats = age_and_marital_status_stats(
             divorce
-        )  # Obtain summary statistics (mean, standard deviation, minimum, and maximum) 
-            # of age at marriage based on marital status using the age_and_marital_status_stats
+        )  # Obtain summary statistics (mean, standard deviation, minimum, and maximum)
+        # of age at marriage based on marital status using the age_and_marital_status_stats
         for val in summ_stats[
             "mean_age"
         ]:  # Iterate through the mean value of each marital status
             self.assertIsInstance(val, float)  # Check if the mean value is a float
 
 
-if (
-    __name__ == "__main__"
-):  # Establish a condition where the tests run if the module 
+if __name__ == "__main__":  # Establish a condition where the tests run if the module
     # that is executed is the main program (meaning it's not running the test on an imported module)
     unittest.main()  # Run all the test if the condition has been satisfied

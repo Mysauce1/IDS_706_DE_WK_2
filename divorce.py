@@ -75,8 +75,8 @@ if divorce is not None:
 """Filter Exploration"""
 print(
     divorce["marriage_type"].value_counts()
-)  # Count the number of couples in each marriage type. 
-    # This is to ensure that there is enough data in the 'Love' type to conduct our analysis.'''
+)  # Count the number of couples in each marriage type.
+# This is to ensure that there is enough data in the 'Love' type to conduct our analysis.'''
 
 
 love_divorce = divorce[
@@ -93,16 +93,16 @@ married_30_plus = love_divorce[
 
 married_30_plus["divorced"].value_counts().plot(
     kind="bar"
-)  # Create a bar chart that shows the frequency of couples 
- # who stay married or get a divorce given they got married at age 30 or after. 
- # This can help give us an idea of their proportions.
+)  # Create a bar chart that shows the frequency of couples
+# who stay married or get a divorce given they got married at age 30 or after.
+# This can help give us an idea of their proportions.
 plt.xlabel("Marital Status")  # Add a label for the x axis
 plt.ylabel("Frequency")  # Add a label for the y axis
 plt.xticks(
     ticks=[0, 1], labels=["Divorced", "Married"], rotation=0
-)  # Convert the encoded names to their corresponding label names. 
-    # Note: Divorced = 1, Not Divorced (Married) = 0. 
-    # These labels were rotated to be horizontal
+)  # Convert the encoded names to their corresponding label names.
+# Note: Divorced = 1, Not Divorced (Married) = 0.
+# These labels were rotated to be horizontal
 plt.title(
     "Marital Status Frequencies for Couples who Married for Love at Age 30 or After"
 )  # title the graph
@@ -137,8 +137,8 @@ love_divorce_final = pd.concat(
         love_divorce_enc.reset_index(drop=True),
     ],
     axis=1,
-)  # Create a new dataframe where the encoded categorical variables 
- # are included with the rest of the data and the unecoded categorical variables are removed
+)  # Create a new dataframe where the encoded categorical variables
+# are included with the rest of the data and the unecoded categorical variables are removed
 love_divorce_final.head()  # Show the prepared dataset
 
 """Perform logistic regression"""
@@ -146,8 +146,8 @@ X = love_divorce_final.drop(columns="divorced")  # Create feature set
 y = love_divorce_final["divorced"]  # Create target set
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.3, random_state=1
-)  # Split data into training and test sets. 
-    # 70 % of the data will be in the training set, while 30 % will be in the test set
+)  # Split data into training and test sets.
+# 70 % of the data will be in the training set, while 30 % will be in the test set
 logreg = LogisticRegression()  # Establish the model
 logreg.fit(X_train, y_train)  # Fit the model
 y_pred = logreg.predict(X_test)  # Make marital status predictions
@@ -157,6 +157,6 @@ print(
 
 coefs = pd.DataFrame(
     {"Features": X_train.columns, "Coefficients": np.exp(logreg.coef_[0])}
-)  # Obtain the model coefficients. 
-    # The exponent of the coefficients is used so the coefficients can be interpreted as odds.
+)  # Obtain the model coefficients.
+# The exponent of the coefficients is used so the coefficients can be interpreted as odds.
 print(coefs)  # Show the coefficients

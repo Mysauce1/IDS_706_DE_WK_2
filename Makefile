@@ -5,8 +5,8 @@ install:
 format:
 	black *.py
 
-#lint:
-#	flake8 divorce.py
+lint:
+	flake8 divorce.py
 
 test:
 	python -m pytest -vv --cov=divorce test_divorce.py
