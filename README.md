@@ -63,6 +63,20 @@ make test
 ```
 This will show you the results of the tests.
 
+## Format divorce.py and test_divorce.py
+In the terminal, run:
+'''
+make format
+'''
+This gives consistent formatting among divorce.py and test_divorce.py based on the Black formatter.
+
+## Lint divorce.py
+In the terminal, run:
+'''
+make lint
+'''
+This checks divorce.py for any errors.
+
 ## Clean up the environment
 In the terminal, run:
 ```

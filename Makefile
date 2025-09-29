@@ -6,7 +6,8 @@ format:
 	black *.py
 
 lint:
-	flake8 divorce.py
+	flake8 --ignore=E501 divorce.py
+
 
 test:
 	python -m pytest -vv --cov=divorce test_divorce.py
