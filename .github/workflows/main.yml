@@ -19,4 +19,4 @@ jobs:
     - name: Lint with flake8
       run: flake8 --ignore=E501 divorce.py
     - name: Run tests
-      run: pytest --cov=divorce
+      run: pytest --cov=divorce test_divorce.py
