@@ -1,3 +1,4 @@
+[![Divorce Project for IDS706](https://github.com/Mysauce1/IDS_706_DE_WK_2/actions/workflows/main.yml/badge.svg)](https://github.com/Mysauce1/IDS_706_DE_WK_2/actions/workflows/main.yml)
 # IDS_706_DE_WK2
 
 # Project Overview
