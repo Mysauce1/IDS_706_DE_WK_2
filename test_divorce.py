@@ -1,12 +1,14 @@
 """Import the unittest module and functions from the divorce module"""
 
+import pandas as pd
 import unittest
 from divorce import (
     explore_data_characteristics,
     isnull,
     age_and_marital_status_stats,
-    divorce,
 )
+
+divorce = pd.read_csv("divorce_df.csv")
 
 
 class TestDivorceFunctions(unittest.TestCase):

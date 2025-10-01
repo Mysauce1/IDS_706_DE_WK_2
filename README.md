@@ -6,7 +6,12 @@ This project explores factors that impact the odds of a married couple getting a
 
 # Required Files
 ## divorce.py
+Contains the functions for the analysis.
+
+
+## divorce_analysis.ipynb
 Contains the analysis for the project.
+
 
 ## test_divorce.py
 Contains test cases to ensure the functions defined for the analysis work properly. There are 3 test cases:
@@ -15,12 +20,14 @@ Contains test cases to ensure the functions defined for the analysis work proper
 3. test_summ_stat_dtype: Checks if the mean age at marriage for both marital status are float data types.
 
 ## requirements.txt
-Contains dependancies that will be used to make and run the test cases.
+Contains dependancies that will be used to perform the analysis, as well as make and run the test cases.
 
 ## Makefile
 Runs and formats the test cases.
 
 # Setup Instructions
+
+The following instructions are most effective if Visual Studio Code is used as the IDE.
 
 ## Check for the required files
 These are the files included in the "Required Files" section, and can be found within the repository.
@@ -42,13 +49,6 @@ If the dev container is not present and you are working in Visual Studio Code, c
 8. Search and select Dev Containers: Rebuild Container
 - This will rebuild the container
 
-## Potential Step: Install packages for analysis (skip if not needed)
-After rebuilding the dev container, you might need to install some packages for the analysis. To do so, enter the following into the terminal:
-```
-pip install numpy
-pip install pandas
-pip install scikit-learn
-pip install matplotlib
 ```
 
 ## Install dependencies from the requirements.txt file
@@ -108,7 +108,7 @@ The following steps were conducted to perform the analysis:
 # Results
 
 ## Exploratory Analysis
-- Based on the summary of the data types, there appears to be 13 integers, 4 floats (decimal numbers), and 5 objects.
+- Based on the summary of the data types, there appears to be 13 integers, 4 floats (decimal numbers), and 5 objects. 7 of the 13 integer variables are encoded binary variables.
 
 - Based of the summary statistics regarding age at marriage for married and divorced couples, 27 seems to be the average age that people among both marital status get married. This seems like a reasonable age considering most people finish school and are a few years into their careers by the time they are 27. With more stability in their lives, many people feel more comfortable getting married. Both status have a standard deviation of almost 5 years, and the minimal age is 18. The main difference between the marital status is the max age. The oldest age at marriage for a divorced couple is 45, while the oldest for a couple that is still married is 43.
 
@@ -121,7 +121,8 @@ The following steps were conducted to perform the analysis:
 
 <img width="1335" height="773" alt="Screenshot 2025-09-10 232833" src="https://github.com/user-attachments/assets/db812d43-5ffa-49f7-b1d0-84ff6c3cd7cf" />
 
-- Based on the results from the bar graph with the marital status frequencies for couples who married at age 30 or after, there appears to be more couples who have gotten a divorce (around 700 for divorce vs around 500 for married).
+- Based on the results from the bar graph with the marital status frequencies for couples who married at age 30 or after, 
+710 couples (~58% of the the couples) got divorced, while 514 couples (~42% of the couples) stayed married. Even though a majority of the couples got divorced, the proportions for married and divorced couples isn't too far away from being evenly split. This could be because getting married later in life allows individuals to mature and develop an understand of what they need/want in a partner, which can increase their chance of finding an ideal partner. Exploration into how marrying at a younger age, such as 18, impacts the sustainability of a marriage would be an ideal next step to dive deeper into this topic.
 
 ## Love Marriages (After Logistic Regression)
 - Based on the accuracy score, the model did not perform well on the data with a score of 59% accuracy. This poor score could be due to lack of scaling (one variable had a high scale than the others, which probably skewed the results, the inclusion of irrelavant variables (feature selection was not performed prior to running the model), or lack of parameter tuning (the default parameters of model were used)). Due to these findings, we should be wary of the validity of the coefficients.
