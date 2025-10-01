@@ -117,8 +117,6 @@ The following steps were conducted to perform the analysis:
 ## Love Marriages (Before Logistic Regression)
 - Based on the the results from the count of marriage types, love marriages make up the majority of the data with 3513 couples out of 5000. This is good, because we can filter the dataset without fear of losing too much data.
 
-<img width="1335" height="773" alt="Screenshot 2025-09-10 232833" src="https://github.com/user-attachments/assets/db812d43-5ffa-49f7-b1d0-84ff6c3cd7cf" />
-![alt text](https://github.com/mysauce1/IDS_706_DE_WK_2/blob/main/married_30_plus.jpg?raw=true)
 <img width="800" height="600" alt="married_30_plus" src="https://github.com/user-attachments/assets/236b9cd3-1227-4f49-9fea-7f7494b2ff92" />
 
 
