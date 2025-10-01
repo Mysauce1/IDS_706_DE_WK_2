@@ -119,6 +119,8 @@ The following steps were conducted to perform the analysis:
 
 <img width="1335" height="773" alt="Screenshot 2025-09-10 232833" src="https://github.com/user-attachments/assets/db812d43-5ffa-49f7-b1d0-84ff6c3cd7cf" />
 ![alt text](https://github.com/mysauce1/IDS_706_DE_WK_2/blob/main/married_30_plus.jpg?raw=true)
+<img width="800" height="600" alt="married_30_plus" src="https://github.com/user-attachments/assets/236b9cd3-1227-4f49-9fea-7f7494b2ff92" />
+
 
 - Based on the results from the bar graph with the marital status frequencies for couples who married at age 30 or after, 
 710 couples (~58% of the the couples) got divorced, while 514 couples (~42% of the couples) stayed married. Even though a majority of the couples got divorced, the proportions for married and divorced couples isn't too far away from being evenly split. This could be because getting married later in life allows individuals to mature and develop an understand of what they need/want in a partner, which can increase their chance of finding an ideal partner. Exploration into how marrying at a younger age, such as 18, impacts the sustainability of a marriage would be an ideal next step to dive deeper into this topic.
