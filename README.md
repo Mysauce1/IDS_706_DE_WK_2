@@ -49,8 +49,6 @@ If the dev container is not present and you are working in Visual Studio Code, c
 8. Search and select Dev Containers: Rebuild Container
 - This will rebuild the container
 
-```
-
 ## Install dependencies from the requirements.txt file
 In the terminal, run:
 ```
