@@ -139,3 +139,5 @@ Line 82-88 in red in the image above corresponds to line 53-60 in green in the i
 <img width="1389" height="636" alt="Screenshot 2025-09-30 224903" src="https://github.com/user-attachments/assets/9e964cc9-d5e4-4259-baba-b0b0d208f014" />
 Line 127 in red in the first refactoring image corresponds to line 601 in green in the second refactoring image. This was the renamed variable.
 
+Red represents the code before it was refactored, green represents the code after it was refactored.
+
