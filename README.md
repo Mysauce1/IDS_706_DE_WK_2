@@ -134,7 +134,8 @@ The following steps were conducted to perform the analysis:
 
 # Refactoring
 <img width="2732" height="1543" alt="Screenshot 2025-09-30 223600" src="https://github.com/user-attachments/assets/ffcd49ac-f28b-4ecd-b5ad-f9963df3bb4b" />
+Line 82-88 in red in the image above corresponds to line 53-60 in green in the image above. This was the extracted method.
 
 <img width="1389" height="636" alt="Screenshot 2025-09-30 224903" src="https://github.com/user-attachments/assets/9e964cc9-d5e4-4259-baba-b0b0d208f014" />
-
+Line 127 in red in the first refactoring image corresponds to line 601 in green in the second refactoring image. This was the renamed variable.
 
